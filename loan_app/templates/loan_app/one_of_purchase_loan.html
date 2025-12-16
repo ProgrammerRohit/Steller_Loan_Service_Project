@@ -1,0 +1,319 @@
+{% extends 'loan_app/base.html' %}
+{% load static %}
+{% block title %}One off Purchase Loan | Steller Finance{% endblock title %}
+{% block meta_keywords %}one-off purchase loan UK, purchase finance, consumer loan, fixed-term loan, major purchase loan{% endblock %}
+{% block meta_description %}Spread the cost of a single major purchase with a fixed-term loan and predictable monthly payments.{% endblock %}
+{% block content %}
+<!-- Navbar & Hero Start -->
+<div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light"> 
+            <a href="#" class="navbar-brand p-0">
+                <img src="{% static 'loan_app/assets/steller-logo.png' %}" alt="Logo" style="width: 200px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-0 mx-lg-auto">
+                    <a href="{% url 'home' %}" class="nav-item nav-link">Home</a>
+                    <a href="{% url 'about' %}" class="nav-item nav-link">About</a>
+                    <a href="{% url 'contact' %}" class="nav-item nav-link">Contact</a>
+                    <a href="{% url 'check_status' %}" class="nav-item nav-link">Check&nbsp;Status</a>
+                    <a href="{% url 'loan_step' 1 %}" class="nav-item nav-link bg-primary text-white ms-2">Apply&nbsp;Now</a>
+                </div>
+            </div>
+            <div class="d-none d-xl-flex flex-shrink-0 ps-4">
+                <a href="tel:+02039512735" class="btn btn-light btn-lg-square rounded-circle position-relative wow tada" data-wow-delay=".9s">
+                    <i class="fa fa-phone-alt fa-2x"></i>
+                    <div class="position-absolute" style="top: 7px; right: 12px;">
+                        <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                    </div>
+                </a>
+                <div class="d-flex flex-column ms-3">
+                    <span>Call to Our Experts</span>
+                    <a href="tel:+4402039512735"><span class="text-dark">Free: +44 020 3951 2735</span></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- Navbar & Hero End -->
+
+<!-- Header Start -->
+<div class="container-fluid bg-breadcrumb">
+    <div class="container text-center py-5" style="max-width: 900px;">
+        <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">One of Purchase Loan</h4>
+        <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+            <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+            <li class="breadcrumb-item active text-primary">One of Purchase Loan</li>
+        </ol>    
+    </div>
+</div>
+<!-- Header End -->
+
+<!-- One of Purchase Loan Start -->
+<div class="container py-5">
+    <img src="{% static 'loan_app/assets/One_of_purchase1.png' %}" alt="business-expense" style="width: 100%; margin-bottom: 30px">
+    <p>
+        For significant one-off purchases — such as furniture, appliances, consumer electronics or bespoke goods — an appropriate loan can spread the cost whilst preserving liquidity. Steller Finance’s One-off Purchases Loan is designed to provide straightforward, fixed-term finance for singular expenditures, enabling clients to budget effectively and avoid depleting emergency reserves.
+        <br><br>
+        We advise on the most cost-efficient borrowing options, comparing unsecured personal loans, interest-bearing instalment plans and point-of-sale finance where suitable. Our assessment factors in the purchase value, repayment capacity and any promotional or deferred-interest offers to identify the most favourable outcome for the client.
+        <br><br>
+        Transparency is central to our service: we explain total cost of credit, early repayment rights and any penalties that may apply. Steller Finance also highlights consumer protections and warranty considerations associated with major purchases to ensure clients receive value for money and appropriate after-sales support.
+        <br><br>
+        Our aim is to provide practical funding solutions that enable planned purchases without compromising broader financial objectives. We assist clients in selecting a repayment term that balances affordability with minimising interest costs.
+    </p>
+</div>
+<!-- One of Purchase Loan End -->
+
+<!-- Service Start -->
+<div class="container-fluid service py-5">
+    <div class="container py-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+            <h4 class="text-primary">Our Services</h4>
+            <h1 class="display-4 mb-4">We Provide Best Services</h1>
+            <p class="mb-0">We understand that financial needs vary widely. That's why we offer a diverse range of loans tailored to meet your specific requirements. Whether you're looking to cover business expenses, consolidate debt, or fund personal projects, our loan options are designed to support you every step of the way.
+            </p>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="{% static 'loan_app/assets/business_expense.png' %}" class="img-fluid rounded-top w-100" alt="">
+                        <div class="service-icon p-3">
+                            <i class="fa fa-users fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="service-content p-4">
+                        <div class="service-content-inner">
+                            <a href="#" class="d-inline-block h5 mb-4">Business Expenses Loan</a>
+                            <p class="mb-4">Need cash to cover payroll, suppliers or stock? Our business expenses loans provide flexible funding that works with your cashflow — we’ll help you find an option that keeps your business moving.</p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="{% url 'business_expense_loan' %}">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="{% static 'loan_app/assets/Debt_consolidation.png' %}" class="img-fluid rounded-top w-100" alt="">
+                        <div class="service-icon p-3">
+                            <i class="fa fa-car fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="service-content p-4">
+                        <div class="service-content-inner">
+                            <a href="#" class="d-inline-block h5 mb-4">Debt Consolidation Loan</a>
+                            <p class="mb-4">Tired of juggling several repayments? We can help you combine debts into a single loan with a clear monthly payment, making budgeting easier and giving you more control.</p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="{% url 'debt_consolidation_loan' %}">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="{% static 'loan_app/assets/Education_cost.png' %}" class="img-fluid rounded-top w-100" alt="">
+                        <div class="service-icon p-3">
+                            <i class="fa fa-home fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="service-content p-4">
+                        <div class="service-content-inner">
+                            <a href="#" class="d-inline-block h5 mb-4">Education Cost Loans</a>
+                            <p class="mb-4">Planning for tuition, accommodation or course materials? We arrange loans with repayment plans that suit study timelines and help you focus on learning, not finances.</p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="{% url 'education_cost_loan' %}">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="{% static 'loan_app/assets/Emergency_expense.png' %}" class="img-fluid rounded-top w-100" alt="">
+                        <div class="service-icon p-3">
+                            <i class="fa fa-hospital fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="service-content p-4">
+                        <div class="service-content-inner">
+                            <a href="#" class="d-inline-block h5 mb-4">Emergency Expenses Loan</a>
+                            <p class="mb-4">Facing an unexpected bill or urgent repair? Our emergency loans are designed to get funds quickly while making sure repayments stay manageable.
+
+                            </p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="{% url 'emergency_expense_loan' %}">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row g-4 justify-content-center mt-5">
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="{% static 'loan_app/assets/Home_improvement.png' %}" class="img-fluid rounded-top w-100" alt="">
+                        <div class="service-icon p-3">
+                            <i class="fa fa-home fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="service-content p-4">
+                        <div class="service-content-inner">
+                            <a href="#" class="d-inline-block h5 mb-4">Home Improvements Loan</a>
+                            <p class="mb-4">Thinking of renovating or upgrading your home? We’ll help you find finance that matches your project schedule and budget, so improvements don’t derail your finances.</p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="{% url 'home_improvement_loan' %}">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="{% static 'loan_app/assets/One_of_purchase.png' %}" class="img-fluid rounded-top w-100" alt="">
+                        <div class="service-icon p-3">
+                            <i class="fa fa-shopping-cart fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="service-content p-4">
+                        <div class="service-content-inner">
+                            <a href="#" class="d-inline-block h5 mb-4">One of Purchases Loan</a>
+                            <p class="mb-4">Big purchase coming up? Spread the cost over time with a one-off purchase loan that keeps your savings intact and payments predictable.</p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="{% url 'one_of_purchase_loan' %}">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="{% static 'loan_app/assets/Personal_expence.png' %}" class="img-fluid rounded-top w-100" alt="">
+                        <div class="service-icon p-3">
+                            <i class="fa fa-credit-card fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="service-content p-4">
+                        <div class="service-content-inner">
+                            <a href="#" class="d-inline-block h5 mb-4">Personal Expenses Loan</a>
+                            <p class="mb-4">For day-to-day or unexpected personal costs, our flexible personal loans give you borrowing options that consider your situation and affordability.</p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="{% url 'personal_expense_loan' %}">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="{% static 'loan_app/assets/Travel_expence.png' %}" class="img-fluid rounded-top w-100" alt="">
+                        <div class="service-icon p-3">
+                            <i class="fa fa-car fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="service-content p-4">
+                        <div class="service-content-inner">
+                            <a href="#" class="d-inline-block h5 mb-4">Travel Expenses Loan</a>
+                            <p class="mb-4">Want to book a trip now and pay later? We offer travel finance with clear terms so you can plan your holiday without worrying about a large upfront payment.
+                            </p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="{% url 'travel_expense_loan' %}">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="{% static 'loan_app/assets/Vehicle.png' %}" class="img-fluid rounded-top w-100" alt="">
+                        <div class="service-icon p-3">
+                            <i class="fa fa-car fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="service-content p-4">
+                        <div class="service-content-inner">
+                            <a href="#" class="d-inline-block h5 mb-4">Vehicle Expenses Loan</a>
+                            <p class="mb-4">From repairs to new vehicle purchases, we find suitable finance options that help you stay on the road — whether it’s for personal use or business.
+                            </p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="{% url 'vehicle_expense_loan' %}">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="{% static 'loan_app/assets/Wedding_event.png' %}" class="img-fluid rounded-top w-100" alt="">
+                        <div class="service-icon p-3">
+                            <i class="fa fa-car fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="service-content p-4">
+                        <div class="service-content-inner">
+                            <a href="#" class="d-inline-block h5 mb-4">Wedding Or Event Loan</a>
+                            <p class="mb-4">Planning a wedding or special event? Our event loans help you spread the cost so you can enjoy the day without stretching your long-term finances.
+                            </p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="{% url 'wedding_event_loan' %}">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Service End -->
+
+<!-- FAQs Start -->
+<div class="container-fluid faq-section bg-light py-5">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
+                <div class="h-100">
+                    <div class="mb-5">
+                        <h4 class="text-primary">Some Important FAQ's</h4>
+                        <h1 class="display-4 mb-0">Common Frequently Asked Questions</h1>
+                    </div>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Q: Will you charge me any fees to consider my application?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show active" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body rounded">
+                                    A: We don’t charge any application or upfront fees for loans.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Q: How much could i borrow?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    A: We offer loans of £1,000 to £50,000.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Q: Who can apply for a personal loan?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    A: To apply for a personal loan, you must be a UK citizen residing in the UK, and at least 18 years of age.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.4s">
+                <img src="{% static 'loan_app/assets/carousel-2.png' %}" class="img-fluid w-100" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FAQs End -->
+{% endblock content %}

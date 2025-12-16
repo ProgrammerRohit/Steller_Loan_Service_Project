@@ -1,0 +1,386 @@
+{% extends 'loan_app/base.html' %}
+{% load static %}
+{% block title %}About Steller Finance | UK Credit Introducer {% endblock title %}
+{% block meta_keywords %}About Steller Finance, credit introducer UK, loan introducer, finance advisers, company profile{% endblock %}
+{% block meta_description %}Learn about Steller Finance — a UK credit introducer offering personalised, transparent loan introductions.{% endblock %}
+{% block content %}
+<!-- Navbar & Hero Start -->
+<div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light"> 
+            <a href="#" class="navbar-brand p-0">
+                <img src="{% static 'loan_app/assets/steller-logo.png' %}" alt="Logo" style="width: 200px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-0 mx-lg-auto">
+                    <a href="{% url 'home' %}" class="nav-item nav-link">Home</a>
+                    <a href="{% url 'about' %}" class="nav-item nav-link active">About</a>
+                    <a href="{% url 'contact' %}" class="nav-item nav-link">Contact</a>
+                    <a href="{% url 'check_status' %}" class="nav-item nav-link">Check&nbsp;Status</a>
+                    <a href="{% url 'loan_step' 1 %}" class="nav-item nav-link bg-primary text-white ms-2">Apply&nbsp;Now</a>
+                </div>
+            </div>
+            <div class="d-none d-xl-flex flex-shrink-0 ps-4">
+                <a href="tel:+02039512735" class="btn btn-light btn-lg-square rounded-circle position-relative wow tada" data-wow-delay=".9s">
+                    <i class="fa fa-phone-alt fa-2x"></i>
+                    <div class="position-absolute" style="top: 7px; right: 12px;">
+                        <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                    </div>
+                </a>
+                <div class="d-flex flex-column ms-3">
+                    <span>Call to Our Experts</span>
+                    <a href="tel:+4402039512735"><span class="text-dark">Free: +44 020 3951 2735</span></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- Navbar & Hero End -->
+
+<!-- Header Start -->
+<div class="container-fluid bg-breadcrumb">
+    <div class="container text-center py-5" style="max-width: 900px;">
+        <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">About Us</h4>
+        <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+            <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+            <li class="breadcrumb-item active text-primary">About Us</li>
+        </ol>    
+    </div>
+</div>
+<!-- Header End -->
+
+<!-- About Start -->
+<div class="container-fluid bg-light about pb-5 mt-5">
+    <div class="container pb-5">
+        <div class="row g-5">
+            <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
+                <div class="about-item-content bg-white rounded p-5 h-100">
+                    <h4 class="text-primary">About Our Company</h4>
+                    <h1 class="display-4 mb-4">Steller Finance</h1>
+                    <p>Steller Finance (Steller Investment & Finance Solution LTD) is a UK-based credit introducer committed to delivering responsible, well-structured finance solutions to individuals and businesses. We exist to simplify borrowing: translating complex market choices into clear, practical options that suit each client’s circumstances. Our role is to listen, assess and introduce applicants to appropriate lenders, supporting them through the application process while promoting transparency, affordability and long-term financial health.
+                       <br><br>
+                        We recognise that every borrower’s situation is different. Whether you are seeking short-term working capital for your business, funding for home improvements, consolidation of existing debts, education finance, or credit to meet unexpected costs, we tailor our approach to your objectives and constraints. Our advisers prioritise a full understanding of your financial position — income, liabilities, expenditure and future plans — so that any introduction we make is relevant and proportionate.
+                        <br><br>
+                        At Steller Finance we emphasise clarity at every stage. We explain the terms and costs associated with different products, outline the implications of secured versus unsecured borrowing and highlight alternatives where applicable. We also stress the importance of affordability assessments: loans should be manageable within the context of your budget and not undermine essential living costs or business stability.
+                        <br><br>
+                        Our service model is built on three core commitments. First, professional guidance: our team combines practical market knowledge with careful application management to obtain accurate lender feedback quickly. Second, impartiality: while we may receive commissions from lenders for introductions, our recommendations are driven by the suitability of solutions for your circumstances, not by any single lender’s commercial imperative. Third, discreet and secure handling of your data: we operate in line with UK data protection requirements and apply robust security and AML checks when processing applications.
+                        <br><br>
+                        Working with Steller Finance does not mean we lend directly — the decision to provide credit rests with the lender. We nevertheless add value by preparing comprehensive applications, advising on documentation, liaising with lenders on your behalf and clarifying offers so you can compare effectively. Where lenders require regulated activity or specific checks, those tasks are carried out by the lender or an authorised partner.
+                    </p>
+                    <p class="text-dark"><i class="fa fa-check text-primary me-3"></i>Tailored introductions to suitable, regulated lenders.</p>
+                    <p class="text-dark"><i class="fa fa-check text-primary me-3"></i>Clear guidance on costs, terms and affordability.</p>
+                    <p class="text-dark mb-4"><i class="fa fa-check text-primary me-3"></i>Ongoing support from enquiry to funding and beyond.</p>
+                </div>
+            </div>
+            <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
+                <div class="bg-white rounded p-5 mt-lg-5">
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-12">
+                            <div class="rounded bg-light">
+                                <img src="{% static 'loan_app/assets/image_home_aboutUS1.png' %}" class="img-fluid rounded w-100" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded p-5 mt-5">
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-12">
+                            <div class="rounded bg-light">
+                                <img src="{% static 'loan_app/assets/image_home_aboutUS2.png' %}" class="img-fluid rounded w-100" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+<!-- Who we are Start-->
+<div class="container feature bg-light pb-5">
+    <div class="container pb-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+            <h4 class="text-primary">Who We Are</h4>
+            <h1 class="display-6 mb-4">Loan Provider for your Better Future</h1>
+            <p class="mb-4 text-start">At Steller Investment and Finance Solutions Ltd, we understand that securing a loan can feel like a daunting task. Whether you are a first-time borrower or an experienced investor, the loan landscape can be complex and filled with potential obstacles. To address these challenges, we have assembled a team of skilled financial experts who are passionate about helping you discover the right loan solutions. With years of experience in the financial industry, our team possesses the knowledge and expertise needed to guide you through each step of the borrowing process.
+            </p>
+            <p class="mb-0 text-start">
+                Steller Finance is a client-focused credit introducer operating across the United Kingdom. Our mission is to provide borrowers—both individuals and businesses—with considered access to finance by matching needs with lenders who can deliver responsible, affordable solutions. We know that borrowing decisions are significant: they affect immediate plans and long-term financial wellbeing. That is why we combine careful assessment, candid advice and hands-on application support to help clients make informed, sustainable choices.
+                <br><br>
+                We were founded on the belief that access to finance should be straightforward and fair. Our team brings together advisers with diverse experience in banking, consumer lending, commercial credit and compliance. That diversity enables us to serve a broad range of clients: entrepreneurs seeking working capital, homeowners financing improvements, graduates requiring education funding, families managing unforeseen costs and individuals consolidating debt. Regardless of the requirement, our starting point is always the same — listen first, then design a pathway that balances need, risk and affordability.
+                <br><br>
+                Our approach is practical and process-driven. At the initial stage we collect a clear, accurate snapshot of your financial position and the objective for borrowing. This includes income, outgoings, existing liabilities and any supporting documentation. With that information we construct an assessment that highlights the kinds of products and lenders most likely to offer suitable terms. Where lenders use specific credit criteria or require guarantors or security, we explain those implications candidly so there are no surprises.
+                <br><br>
+                Steller Finance values transparency. When we present options, we summarise the total cost of credit, APR, repayment schedule, likely charges and any potential early repayment penalties. Our advisers will discuss whether a secured product is required and the consequences that security imposes. We also flag alternatives — such as staged funding, invoice finance or negotiation of supplier terms — when these can achieve the client’s goal with lower overall cost or risk.
+                <br><br>
+                Compliance and responsible lending are central to our operations. As a credit introducer we operate in accordance with UK regulatory expectations for fair treatment of customers, transparent financial promotions and appropriate handling of personal data. We carry out identity verification and AML screening where required, and we work with FCA-authorised lenders for activities that require regulated status. Our privacy and data-handling practices are designed to safeguard client information and comply with the Data Protection Act 2018.
+                <br><br>
+                We put client welfare at the heart of our recommendations. That means assessing the sustainability of repayments, avoiding solutions that create immediate relief at the expense of long-term detriment, and signposting to independent debt advice where necessary. If a particular application is unlikely to achieve the desired outcome, we will explain why and propose practical alternatives, rather than pushing unsuitable credit simply to complete a transaction.
+                <br><br>
+                Communication is another pillar of our service. We aim to keep clients informed at every stage — from initial eligibility feedback to lender responses and documentation requirements. Our advisers handle liaison with lenders, follow up on outstanding items and clarify any offer terms to ensure you can compare and decide confidently. We also provide post-funding support: answering queries about repayment schedules, discussing refinancing options and assisting if financial circumstances change.
+                <br><br>
+                Steller Finance prides itself on building long-term relationships. Many clients return to us as their circumstances evolve because they value a trusted partner who understands their history and can rapidly identify relevant options. For business clients, we seek to act as a consistent finance advisor capable of supporting growth cycles, seasonal needs and occasional short-term liquidity requirements. For personal clients, we aim to be a reliable source of clear, impartial guidance when life requires financial decisions.
+                <br><br>
+                In short, Steller Finance exists to make access to appropriate credit simpler, fairer and more transparent. We do not provide credit ourselves; instead, we apply market knowledge, careful assessment and diligent application management to introduce you to lenders that may help you achieve your financial objectives. If you want a considered, responsible approach to borrowing with a focus on long-term outcomes rather than short-term sales, our team is ready to help.
+                <br><br>
+                To learn more or to discuss your requirements, contact Steller Finance . We will be pleased to explain our process and explore options that suit your needs.
+            </p>
+        </div>
+    </div>
+</div>
+<!-- Who we are End-->
+
+<!-- Service Start -->
+<div class="container-fluid service py-5">
+    <div class="container py-5">
+        <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+            <h4 class="text-primary">Our Services</h4>
+            <h1 class="display-4 mb-4">We Provide Best Services</h1>
+            <p class="mb-0">We understand that financial needs vary widely. That's why we offer a diverse range of loans tailored to meet your specific requirements. Whether you're looking to cover business expenses, consolidate debt, or fund personal projects, our loan options are designed to support you every step of the way.
+            </p>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="{% static 'loan_app/assets/business_expense.png' %}" class="img-fluid rounded-top w-100" alt="">
+                        <div class="service-icon p-3">
+                            <i class="fa fa-users fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="service-content p-4">
+                        <div class="service-content-inner">
+                            <a href="#" class="d-inline-block h5 mb-4">Business Expenses Loan</a>
+                            <p class="mb-4">Need cash to cover payroll, suppliers or stock? Our business expenses loans provide flexible funding that works with your cashflow — we’ll help you find an option that keeps your business moving.</p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="{% url 'business_expense_loan' %}">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="{% static 'loan_app/assets/Debt_consolidation.png' %}" class="img-fluid rounded-top w-100" alt="">
+                        <div class="service-icon p-3">
+                            <i class="fa fa-car fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="service-content p-4">
+                        <div class="service-content-inner">
+                            <a href="#" class="d-inline-block h5 mb-4">Debt Consolidation Loan</a>
+                            <p class="mb-4">Tired of juggling several repayments? We can help you combine debts into a single loan with a clear monthly payment, making budgeting easier and giving you more control.</p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="{% url 'debt_consolidation_loan' %}">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="{% static 'loan_app/assets/Education_cost.png' %}" class="img-fluid rounded-top w-100" alt="">
+                        <div class="service-icon p-3">
+                            <i class="fa fa-home fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="service-content p-4">
+                        <div class="service-content-inner">
+                            <a href="#" class="d-inline-block h5 mb-4">Education Cost Loans</a>
+                            <p class="mb-4">Planning for tuition, accommodation or course materials? We arrange loans with repayment plans that suit study timelines and help you focus on learning, not finances.</p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="{% url 'education_cost_loan' %}">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="{% static 'loan_app/assets/Emergency_expense.png' %}" class="img-fluid rounded-top w-100" alt="">
+                        <div class="service-icon p-3">
+                            <i class="fa fa-hospital fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="service-content p-4">
+                        <div class="service-content-inner">
+                            <a href="#" class="d-inline-block h5 mb-4">Emergency Expenses Loan</a>
+                            <p class="mb-4">Facing an unexpected bill or urgent repair? Our emergency loans are designed to get funds quickly while making sure repayments stay manageable.
+
+                            </p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="{% url 'emergency_expense_loan' %}">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row g-4 justify-content-center mt-5">
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="{% static 'loan_app/assets/Home_improvement.png' %}" class="img-fluid rounded-top w-100" alt="">
+                        <div class="service-icon p-3">
+                            <i class="fa fa-home fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="service-content p-4">
+                        <div class="service-content-inner">
+                            <a href="#" class="d-inline-block h5 mb-4">Home Improvements Loan</a>
+                            <p class="mb-4">Thinking of renovating or upgrading your home? We’ll help you find finance that matches your project schedule and budget, so improvements don’t derail your finances.</p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="{% url 'home_improvement_loan' %}">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="{% static 'loan_app/assets/One_of_purchase.png' %}" class="img-fluid rounded-top w-100" alt="">
+                        <div class="service-icon p-3">
+                            <i class="fa fa-shopping-cart fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="service-content p-4">
+                        <div class="service-content-inner">
+                            <a href="#" class="d-inline-block h5 mb-4">One of Purchases Loan</a>
+                            <p class="mb-4">Big purchase coming up? Spread the cost over time with a one-off purchase loan that keeps your savings intact and payments predictable.</p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="{% url 'one_of_purchase_loan' %}">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="{% static 'loan_app/assets/Personal_expence.png' %}" class="img-fluid rounded-top w-100" alt="">
+                        <div class="service-icon p-3">
+                            <i class="fa fa-credit-card fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="service-content p-4">
+                        <div class="service-content-inner">
+                            <a href="#" class="d-inline-block h5 mb-4">Personal Expenses Loan</a>
+                            <p class="mb-4">For day-to-day or unexpected personal costs, our flexible personal loans give you borrowing options that consider your situation and affordability.</p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="{% url 'personal_expense_loan' %}">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="{% static 'loan_app/assets/Travel_expence.png' %}" class="img-fluid rounded-top w-100" alt="">
+                        <div class="service-icon p-3">
+                            <i class="fa fa-car fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="service-content p-4">
+                        <div class="service-content-inner">
+                            <a href="#" class="d-inline-block h5 mb-4">Travel Expenses Loan</a>
+                            <p class="mb-4">Want to book a trip now and pay later? We offer travel finance with clear terms so you can plan your holiday without worrying about a large upfront payment.
+                            </p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="{% url 'travel_expense_loan' %}">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="{% static 'loan_app/assets/Vehicle.png' %}" class="img-fluid rounded-top w-100" alt="">
+                        <div class="service-icon p-3">
+                            <i class="fa fa-car fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="service-content p-4">
+                        <div class="service-content-inner">
+                            <a href="#" class="d-inline-block h5 mb-4">Vehicle Expenses Loan</a>
+                            <p class="mb-4">From repairs to new vehicle purchases, we find suitable finance options that help you stay on the road — whether it’s for personal use or business.
+                            </p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="{% url 'vehicle_expense_loan' %}">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                <div class="service-item">
+                    <div class="service-img">
+                        <img src="{% static 'loan_app/assets/Wedding_event.png' %}" class="img-fluid rounded-top w-100" alt="">
+                        <div class="service-icon p-3">
+                            <i class="fa fa-car fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="service-content p-4">
+                        <div class="service-content-inner">
+                            <a href="#" class="d-inline-block h5 mb-4">Wedding Or Event Loan</a>
+                            <p class="mb-4">Planning a wedding or special event? Our event loans help you spread the cost so you can enjoy the day without stretching your long-term finances.
+                            </p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="{% url 'wedding_event_loan' %}">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Service End -->
+
+<!-- FAQs Start -->
+<div class="container-fluid faq-section bg-light py-5">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
+                <div class="h-100">
+                    <div class="mb-5">
+                        <h4 class="text-primary">Some Important FAQ's</h4>
+                        <h1 class="display-4 mb-0">Common Frequently Asked Questions</h1>
+                    </div>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Q: Will you charge me any fees to consider my application?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show active" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body rounded">
+                                    A: We don’t charge any application or upfront fees for loans.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Q: How much could i borrow?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    A: We offer loans of £1,000 to £50,000.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Q: Who can apply for a personal loan?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    A: To apply for a personal loan, you must be a UK citizen residing in the UK, and at least 18 years of age.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.4s">
+                <img src="{% static 'loan_app/assets/carousel-2.png' %}" class="img-fluid w-100" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FAQs End -->
+{% endblock content %}

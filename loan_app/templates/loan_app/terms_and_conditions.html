@@ -1,0 +1,159 @@
+{% extends 'loan_app/base.html' %}
+{% load static %}
+{% block title %}Terms and Conditions{% endblock title %}
+{% block content %}
+<!-- Navbar & Hero Start -->
+<div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
+  <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light"> 
+          <a href="#" class="navbar-brand p-0">
+              <img src="{% static 'loan_app/assets/steller-logo.png' %}" alt="Logo" style="width: 200px;">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+              <span class="fa fa-bars"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+              <div class="navbar-nav mx-0 mx-lg-auto">
+                  <a href="{% url 'home' %}" class="nav-item nav-link">Home</a>
+                  <a href="{% url 'about' %}" class="nav-item nav-link">About</a>
+                  <a href="{% url 'contact' %}" class="nav-item nav-link">Contact</a>
+                  <a href="{% url 'check_status' %}" class="nav-item nav-link">Check&nbsp;Status</a>
+                  <a href="{% url 'loan_step' 1 %}" class="nav-item nav-link bg-primary text-white ms-2">Apply&nbsp;Now</a>
+              </div>
+          </div>
+          <div class="d-none d-xl-flex flex-shrink-0 ps-4">
+              <a href="tel:+02039512735" class="btn btn-light btn-lg-square rounded-circle position-relative wow tada" data-wow-delay=".9s">
+                  <i class="fa fa-phone-alt fa-2x"></i>
+                  <div class="position-absolute" style="top: 7px; right: 12px;">
+                      <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                  </div>
+              </a>
+              <div class="d-flex flex-column ms-3">
+                  <span>Call to Our Experts</span>
+                  <a href="tel:+4402039512735"><span class="text-dark">Free: +44 020 3951 2735</span></a>
+              </div>
+          </div>
+      </nav>
+  </div>
+</div>
+<!-- Navbar & Hero End -->
+
+<div class="container bg-light p-5">
+    <section>
+    <h1 class="text-center">Terms & Conditions</h1>
+
+    <p>Please read these Terms & Conditions carefully before using the services of Steller Investment & Finance Solution LTD (trading as Steller Finance) ("Steller Finance", "we", "us" or "our"). These Terms & Conditions set out the legally binding terms for your use of our website, services and any application for finance introduced through our platform.</p>
+
+    <p><strong>Important:</strong> These Terms & Conditions are a template and are provided for general informational purposes only. They do not constitute legal advice. You should obtain professional legal advice to ensure that these terms meet your specific commercial, regulatory and compliance obligations under UK law.</p>
+
+    <h2>1. Definitions</h2>
+    <ul>
+        <li>"Agreement" means these Terms & Conditions together with any specific service agreement between you and Steller Finance.</li>
+        <li>"Applicant", "you" or "your" means the person or entity that uses our services or applies for finance via our platform.</li>
+        <li>"Lender" means any third-party credit provider introduced by Steller Finance to you.</li>
+        <li>"Service(s)" means the services provided by Steller Finance, including but not limited to introducing applicants to lenders, providing information about finance products, and any ancillary services.</li>
+        <li>"Website" means stellerfinance.co.uk and any associated web pages or mobile applications.</li>
+    </ul>
+
+    <h2>2. About Us</h2>
+    <p>Steller Investment & Finance Solution LTD is registered in England & Wales (Company No: +44 020 3951 2735). Registered office: 22 Gunnersbury Crescent, Acton, London, United Kingdom, W3 9AA. Steller Finance is a credit introducer and not a lender. We introduce customers to a panel of lenders and may receive commission or fees from lenders for introductions. We do not guarantee loan approval and do not underwrite or provide credit ourselves.</p>
+
+    <h2>3. Scope of these Terms</h2>
+    <p>These Terms apply to any use of the Website and any Services provided by Steller Finance. By accessing or using our Website or Services you accept and agree to be bound by these Terms. If you do not agree to these Terms, do not use the Website or our Services.</p>
+
+    <h2>4. Our Role and Your Acknowledgements</h2>
+    <p><strong>4.1 Role:</strong> We act as a credit introducer only. We introduce potential borrowers to one or more lenders. We do not act as a lender and do not provide credit ourselves. Where we pass your details to a lender, that lender will be solely responsible for assessing and deciding whether to offer credit and on what terms.</p>
+
+    <p><strong>4.2 No guarantee of acceptance:</strong> We cannot and do not guarantee that any application submitted through our Services will be accepted by a lender. Any decision to offer credit rests solely with the lender.</p>
+
+    <p><strong>4.3 Information accuracy:</strong> You confirm that all information you provide to us (including in any application form) is accurate, complete and up to date. Providing false or misleading information may result in rejection of your application and may be a criminal offence.</p>
+
+    <h2>5. Eligibility and Applications</h2>
+    <p><strong>5.1 Eligibility:</strong> Eligibility criteria vary by lender and product. Common eligibility requirements include age (18+), UK residency, income thresholds and creditworthiness. You are responsible for ensuring you meet any eligibility criteria before applying.</p>
+
+    <p><strong>5.2 Application process:</strong> To apply for finance you must submit an application form and provide required supporting documentation (identity verification, proof of address, income evidence, bank statements etc.). We will forward your application and documentation to one or more lenders with your consent.</p>
+
+    <p><strong>5.3 Credit and identity checks:</strong> By applying for finance via our Services you consent to credit searches and identity verification checks being carried out by credit reference agencies and other third parties. These searches may affect your credit score. We will inform you which credit reference agency is used where required.</p>
+
+    <h2>6. Fees, Commissions and Charges</h2>
+    <p><strong>6.1 Our charges:</strong> We may charge a fee to you for certain Services (e.g., application processing, advisory fees) as disclosed to you at the point of engagement. Details of any fees payable will be provided before you commit to a Service. If you disagree with the fees, do not proceed.</p>
+
+    <p><strong>6.2 Commissions:</strong> We may receive commission, referral payments or other remuneration from lenders for introducing customers. Such commissions do not affect the terms offered by lenders, but we will disclose any material conflicts of interest where relevant.</p>
+
+    <p><strong>6.3 Third-party fees:</strong> Lenders may charge their own fees, arrangement costs or early repayment charges. You are responsible for reviewing and accepting such costs directly with the lender.</p>
+
+    <h2>7. Acceptance and Contract Formation</h2>
+    <p><strong>7.1 Service Contract:</strong> A contract between you and Steller Finance for the provision of Services is formed when we confirm acceptance of your instruction in writing (including by email).</p>
+
+    <p><strong>7.2 Lender Agreement:</strong> Any agreement to borrow funds is solely between you and the lender. You will be required to enter into a separate credit agreement with the lender and that agreement will govern the loan relationship.</p>
+
+    <h2>8. Your Responsibilities</h2>
+    <p><strong>8.1 Cooperation:</strong> You agree to provide all necessary information and documentation promptly and to cooperate with us and any lender in relation to your application.</p>
+
+    <p><strong>8.2 Accuracy:</strong> You warrant that the information you provide is true, accurate and complete. You agree to notify us promptly of any changes to information provided.</p>
+
+    <p><strong>8.3 Use of funds:</strong> You agree to use any funds obtained in accordance with the terms of the credit agreement with the lender and for the stated purpose communicated during your application.</p>
+
+    <h2>9. Data Protection and Confidentiality</h2>
+    <p><strong>9.1 Privacy obligations:</strong> We process personal data in accordance with our Privacy Policy. By using our Services you consent to us processing personal information for the purposes of providing the Service, performing credit checks, fraud prevention, and complying with legal obligations.</p>
+
+    <p><strong>9.2 Confidentiality:</strong> We will treat information provided by you as confidential and will not disclose it to third parties except where required to perform our Services (e.g., to lenders, credit reference agencies) or where required by law.</p>
+
+    <h2>10. Anti-Money Laundering, Fraud Prevention and Verification</h2>
+    <p><strong>10.1 AML checks:</strong> To comply with anti-money laundering ("AML") and counter-terrorist financing obligations we may carry out identity checks and request supporting documentation. We may also screen applicants against sanctions and watchlists.</p>
+
+    <p><strong>10.2 Consent for checks:</strong> By applying you consent to these checks and to us disclosing information to regulatory and law enforcement bodies where reasonably required.</p>
+
+    <h2>11. Liability and Indemnity</h2>
+    <p><strong>11.1 Limitation of liability:</strong> To the fullest extent permitted by law, Steller Finance’s liability to you in connection with the Website and Services shall be limited to direct losses up to an aggregate sum equal to the fees paid by you for the services in the 12 months preceding the claim. We shall not be liable for any indirect, consequential, special or punitive losses (including loss of profits, loss of business or goodwill).</p>
+
+    <p><strong>11.2 No warranty:</strong> We provide the Website and Services on an "as is" and "as available" basis and disclaim all representations, warranties and conditions, whether express or implied, to the fullest extent permitted by law.</p>
+
+    <p><strong>11.3 Indemnity:</strong> You agree to indemnify and hold harmless Steller Finance, its directors, officers and employees from any claims, liabilities, losses, damages, costs or expenses arising out of your breach of these Terms or your negligence or wilful misconduct.</p>
+
+    <h2>12. Complaints and Dispute Resolution</h2>
+    <p><strong>12.1 Complaints:</strong> If you have a complaint about our Services, please contact our complaints team at: loans@stellerfinance.co.uk. We aim to acknowledge complaints promptly and resolve them as quickly as possible.</p>
+
+    <p><strong>12.2 Financial Ombudsman:</strong> If you are a consumer and remain dissatisfied after our final response (or if eight weeks have passed without a final response), you may be eligible to refer your complaint to the Financial Ombudsman Service: https://www.stellerfinance.co.uk.</p>
+
+    <h2>13. Intellectual Property</h2>
+    <p>All content, trademarks, logos, designs and materials on the Website are the intellectual property of Steller Finance or its licensors. You may not copy, reproduce, adapt or distribute any content from the Website without our prior written consent.</p>
+
+    <h2>14. Suspension and Termination</h2>
+    <p><strong>14.1 Suspension:</strong> We may suspend or restrict access to the Website or Services at our discretion for maintenance, for suspected fraudulent activity, or where required by law.</p>
+
+    <p><strong>14.2 Termination:</strong> Either party may terminate a Service contract in accordance with the termination rights set out in that contract. Termination of a Service contract will not affect rights and obligations accrued prior to termination.</p>
+
+    <h2>15. Amendments</h2>
+    <p>We may amend these Terms from time to time. Where changes are material we will notify you in advance (for example by email or a prominent notice on the Website). Continued use of the Website or Services after changes take effect constitutes acceptance of the revised Terms.</p>
+
+    <h2>16. Third-Party Links and Content</h2>
+    <p>The Website may contain links to third-party websites. We do not endorse and are not responsible for the content, privacy practices or availability of those sites.</p>
+
+    <h2>17. Notices</h2>
+    <p>Notices to you may be given via email, post or by posting on the Website. Notices from you should be submitted to our registered office address or via the contact email provided on the Website.</p>
+
+    <h2>18. Severability</h2>
+    <p>If any provision of these Terms is held to be invalid or unenforceable, such provision shall be severed and the remainder of the Terms will continue in full force and effect.</p>
+
+    <h2>19. Entire Agreement</h2>
+    <p>These Terms, together with any Service-specific agreement and our Privacy Policy, constitute the entire agreement between you and Steller Finance relating to the subject matter herein.</p>
+
+    <h2>20. Governing Law and Jurisdiction</h2>
+    <p>These Terms shall be governed by and construed in accordance with the laws of England & Wales. The courts of England & Wales shall have exclusive jurisdiction to settle any disputes arising out of or in connection with these Terms.</p>
+
+    <h2>21. Consumer Rights</h2>
+    <p>If you are contracting as a consumer, nothing in these Terms affects your statutory rights. Where applicable, you have rights under the Consumer Credit Act 1974, the Consumer Rights Act 2015 and other relevant UK consumer protection laws.</p>
+
+    <h2>22. Contact Us</h2>
+    <p>If you have any questions about these Terms please contact us at:</p>
+    <p>
+        Steller Investment & Finance Solution LTD (trading as Steller Finance)<br>
+        Registered office: 22 Gunnersbury Crescent, Acton, London, United Kingdom, W3 9AA<br>
+        Company No: +44 020 3951 2735<br>
+        Email: loans@stellerfinance.co.uk<br>
+        Telephone: +44 020 3951 2735
+    </p>
+    </section>  
+</div> 
+{% endblock content %}
