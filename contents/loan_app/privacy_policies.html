@@ -1,0 +1,99 @@
+{% extends 'loan_app/base.html' %}
+{% load static %}
+{% block title %}Privacy Policies{% endblock title %}
+{% block content %}
+<!-- Navbar & Hero Start -->
+<div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
+  <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light"> 
+          <a href="#" class="navbar-brand p-0">
+              <img src="{% static 'loan_app/assets/steller-logo.png' %}" alt="Logo" style="width: 200px;">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+              <span class="fa fa-bars"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+              <div class="navbar-nav mx-0 mx-lg-auto">
+                  <a href="{% url 'home' %}" class="nav-item nav-link">Home</a>
+                  <a href="{% url 'about' %}" class="nav-item nav-link">About</a>
+                  <a href="{% url 'contact' %}" class="nav-item nav-link">Contact</a>
+                  <a href="{% url 'check_status' %}" class="nav-item nav-link">Check&nbsp;Status</a>
+                  <a href="{% url 'loan_step' 1 %}" class="nav-item nav-link bg-primary text-white ms-2">Apply&nbsp;Now</a>
+              </div>
+          </div>
+          <div class="d-none d-xl-flex flex-shrink-0 ps-4">
+              <a href="tel:+02039512735" class="btn btn-light btn-lg-square rounded-circle position-relative wow tada" data-wow-delay=".9s">
+                  <i class="fa fa-phone-alt fa-2x"></i>
+                  <div class="position-absolute" style="top: 7px; right: 12px;">
+                      <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                  </div>
+              </a>
+              <div class="d-flex flex-column ms-3">
+                  <span>Call to Our Experts</span>
+                  <a href="tel:+02039512735"><span class="text-dark">Free: + 020 3951 2735</span></a>
+              </div>
+          </div>
+      </nav>
+  </div>
+</div>
+<!-- Navbar & Hero End -->
+
+<div class="container bg-light p-5">
+    <section>
+        <h1 class="text-center">Privacy Policy (Demo)</h1>
+        <p><strong>Effective Date:</strong> June 12, 2025</p>
+      
+        <p>Welcome to <strong>[Your Company Name]</strong> ("we", "our", or "us"). This is a <em>demo privacy policy</em> created for testing and placeholder purposes only. It outlines how we might collect, use, and protect your information—if we were doing that for real.</p>
+      
+        <h2>1. Information We Collect (Hypothetically)</h2>
+        <ul>
+          <li>Name, email, and phone number (if you actually gave it to us, which you didn’t)</li>
+          <li>Imaginary browsing data</li>
+          <li>Totally made-up cookies</li>
+          <li>Location data from a crystal ball</li>
+        </ul>
+      
+        <h2>2. How We Use Your Information (In Theory)</h2>
+        <ul>
+          <li>Improve our fake services</li>
+          <li>Pretend to personalize your experience</li>
+          <li>Run fictional analytics</li>
+          <li>Spam you with emails that don’t exist</li>
+        </ul>
+      
+        <h2>3. Sharing Your Data (We Don't, Promise)</h2>
+        <p>Since this is just a demo, we don’t share your data with:</p>
+        <ul>
+          <li>Third-party advertisers</li>
+          <li>Government agencies</li>
+          <li>Aliens from other planets</li>
+        </ul>
+      
+        <h2>4. Your Rights (In a Parallel Universe)</h2>
+        <ul>
+          <li>Access your fake data</li>
+          <li>Delete your imaginary account</li>
+          <li>Complain to someone (like your cat)</li>
+        </ul>
+      
+        <h2>5. Cookies (Not the Chocolate Chip Kind)</h2>
+        <p>Our pretend site might use pretend cookies to:</p>
+        <ul>
+          <li>Store nothing</li>
+          <li>Track nothing</li>
+          <li>Taste like nothing</li>
+        </ul>
+      
+        <h2>6. Changes to This Policy</h2>
+        <p>We reserve the right to change this pretend privacy policy at any time, for no reason, because it’s not real anyway.</p>
+      
+        <h2>7. Contact Us</h2>
+        <p>If you have questions about this fake policy, feel free to reach out to:</p>
+        <ul>
+          <li>Email: <a href="mailto:fake@email.com">fake@email.com</a></li>
+          <li>Phone: +000-000-0000</li>
+          <li>Address: Imaginary Office, Nowhere Street, Null City</li>
+        </ul>
+    </section>      
+</div>
+{% endblock content %}

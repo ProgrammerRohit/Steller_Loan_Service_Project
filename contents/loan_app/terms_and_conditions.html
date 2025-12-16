@@ -1,0 +1,86 @@
+{% extends 'loan_app/base.html' %}
+{% load static %}
+{% block title %}Terms and Conditions{% endblock title %}
+{% block content %}
+<!-- Navbar & Hero Start -->
+<div class="container-fluid nav-bar px-0 px-lg-4 py-lg-0">
+  <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light"> 
+          <a href="#" class="navbar-brand p-0">
+              <img src="{% static 'loan_app/assets/steller-logo.png' %}" alt="Logo" style="width: 200px;">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+              <span class="fa fa-bars"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+              <div class="navbar-nav mx-0 mx-lg-auto">
+                  <a href="{% url 'home' %}" class="nav-item nav-link">Home</a>
+                  <a href="{% url 'about' %}" class="nav-item nav-link">About</a>
+                  <a href="{% url 'contact' %}" class="nav-item nav-link">Contact</a>
+                  <a href="{% url 'check_status' %}" class="nav-item nav-link">Check&nbsp;Status</a>
+                  <a href="{% url 'loan_step' 1 %}" class="nav-item nav-link bg-primary text-white ms-2">Apply&nbsp;Now</a>
+              </div>
+          </div>
+          <div class="d-none d-xl-flex flex-shrink-0 ps-4">
+              <a href="tel:+02039512735" class="btn btn-light btn-lg-square rounded-circle position-relative wow tada" data-wow-delay=".9s">
+                  <i class="fa fa-phone-alt fa-2x"></i>
+                  <div class="position-absolute" style="top: 7px; right: 12px;">
+                      <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                  </div>
+              </a>
+              <div class="d-flex flex-column ms-3">
+                  <span>Call to Our Experts</span>
+                  <a href="tel:+02039512735"><span class="text-dark">Free: + 020 3951 2735</span></a>
+              </div>
+          </div>
+      </nav>
+  </div>
+</div>
+<!-- Navbar & Hero End -->
+
+<div class="container bg-light p-5">
+    <section>
+        <h1 class="text-center">Terms and Conditions (Demo)</h1>
+        <p><strong>Effective Date:</strong> June 12, 2025</p>
+      
+        <p>Welcome to <strong>[Your Company Name]</strong>. These Terms and Conditions ("Terms") are a <em>demo version</em> for testing and development purposes only. They are not legally binding and are intended for placeholder use.</p>
+      
+        <h2>1. Acceptance of Terms</h2>
+        <p>By accessing or using our fake services, you agree to be bound by these pretend Terms. If you disagree with any part of the terms, please do not use our imaginary platform.</p>
+      
+        <h2>2. Use of the Service</h2>
+        <p>You agree to use our fake website for lawful, make-believe purposes only. You also agree not to:</p>
+        <ul>
+          <li>Hack our non-existent systems</li>
+          <li>Steal unicorns or rainbow data</li>
+          <li>Post any offensive or completely imaginary content</li>
+        </ul>
+      
+        <h2>3. User Accounts</h2>
+        <p>You may be required to create a demo account. Please make sure your fake username and password are kept secret, even though they don't actually work.</p>
+      
+        <h2>4. Intellectual Property</h2>
+        <p>All pretend content on this site is our property—or would be, if it were real. You may not copy, reproduce, or redistribute any of our fictional materials without imaginary permission.</p>
+      
+        <h2>5. Termination</h2>
+        <p>We may suspend or terminate your access to our pretend service at any time, for any reason, or for no reason at all. Because again, none of this is real.</p>
+      
+        <h2>6. Limitation of Liability</h2>
+        <p>We are not liable for anything, ever. This entire section is just filler text. If something breaks, it's probably your keyboard—or your imagination.</p>
+      
+        <h2>7. Changes to Terms</h2>
+        <p>We may update these fake Terms at any time. By continuing to use our mock service, you agree to the updated nonsense.</p>
+      
+        <h2>8. Governing Law</h2>
+        <p>These demo terms are governed by the fictional laws of the Land of Placeholderia.</p>
+      
+        <h2>9. Contact Us</h2>
+        <p>For pretend legal concerns, you can reach out to us at:</p>
+        <ul>
+          <li>Email: <a href="mailto:fake@email.com">fake@email.com</a></li>
+          <li>Phone: +000-000-0000</li>
+          <li>Address: Imaginary Office, Nowhere Street, Null City</li>
+        </ul>
+    </section>      
+</div> 
+{% endblock content %}

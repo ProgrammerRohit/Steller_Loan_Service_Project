@@ -1,0 +1,9 @@
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION BEGIN
+PassengerAppRoot "/home/stelvorr/django_project"
+PassengerBaseURI "/"
+PassengerPython "/home/stelvorr/virtualenv/django_project/3.12/bin/python"
+# DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION END
+PassengerEnabled on
+PassengerAppRoot /home/stelvorr/django_project
+PassengerPython /home/stelvorr/virtualenv/django_project/3.12/bin/python
+WSGIApplicationGroup %{GLOBAL}
