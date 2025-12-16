@@ -1,4 +1,0 @@
-PassengerEnabled on
-PassengerAppRoot /home/stelvorr/django_project
-PassengerPython /home/stelvorr/virtualenv/django_project/3.12/bin/python
-WSGIApplicationGroup %{GLOBAL}
