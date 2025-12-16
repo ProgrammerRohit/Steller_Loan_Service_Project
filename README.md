@@ -1,1 +1,1 @@
-![App Screenshot](Loan_Project/loan_app/static/loan_app/assets/screenshot.png)
+![App Screenshot](loan_app/static/loan_app/assets/screenshot.png)
